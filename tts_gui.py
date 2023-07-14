@@ -28,6 +28,7 @@ def play():
    try:
        if loc!="null":
          os.system("afplay "+loc)
+         #afplay is used for playing a mp3 file on macos. i used it because i built this project on a macbook. 
        else:
            mb.showerror(title="Text to Speech", message="First Convert!")
    except:
