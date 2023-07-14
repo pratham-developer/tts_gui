@@ -23,16 +23,15 @@ def hit():
 
 def hit1(event):
     hit()
+    
 def play():
    try:
        if loc!="null":
          os.system("afplay "+loc)
        else:
            mb.showerror(title="Text to Speech", message="First Convert!")
-
    except:
        mb.showerror(title="Text to Speech", message="First Convert!")
-
 
 but1 = tk.Button(root, text="play", command=play)
 but1.pack(side="bottom")
@@ -41,5 +40,4 @@ but = tk.Button(root, text="convert",command=hit)
 but.pack(side="bottom")
 
 root.bind("<Return>", hit1)
-
 root.mainloop()
