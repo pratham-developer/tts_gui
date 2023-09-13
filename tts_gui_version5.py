@@ -118,7 +118,7 @@ network = not ip == '127.0.0.1'
 if network==True:
     say.config(text="internet available ✅")
 elif network==False:
-    say.config(text="internet available ✅")
+    say.config(text="internet not available ❌")
 
 say2 = ttk.Label(root,text='choose the english accent👇')
 say2.place(x=350,y=385)
